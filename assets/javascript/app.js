@@ -23,30 +23,32 @@ $(document).ready(function() {
 
 	$("#submit").on("click", function() {
 
-    event.preventDefault();
+	    event.preventDefault();
 
-    name = $("#Name").val().trim();
-    title = $("#Role").val().trim();
-    startDate = $("#Start").val().trim();
-    rate = $("#Rate").val().trim();
+	    name = $("#Name").val().trim();
+	    title = $("#Role").val().trim();
+	    startDate = $("#Start").val().trim();
+	    rate = $("#Rate").val().trim();
 
-    console.log(name, title, startDate, rate);
+	    console.log(name, title, startDate, rate);
 
-    database.ref().push({
-        name: name,
-        title: title,
-        startDate: startDate,
-				rate: rate
-		});
+	    database.ref().push({
+	        name: name,
+	        title: title,
+	        startDate: startDate,
+					rate: rate
+			});
 		
 	})	
 
 	database.ref().on("child_added", function(data) {
 		var name = $("<td>").text(item.name.trim());
 		var title = $("<td>").text(item.title.trim());
-		var startDate = $("<td>").text(item.startDate);
-		var rate = $("<td>").text(item.rate);
-		var month = 
+		date = moment(item.startDate, "MM-DD-YYYY");
+		var startDate = $("<td>").text(date.format("MM-DD-YYYY"));
+		var rate = $("<td>").text("$" + item.rate);
+		var month = $("<td>").text(moment.diff(date, "months"));
+		var pay = $("<td>").text("$" + month*rate);
 		$(".display").append($("<tr>").append([name, title, startDate, month, rate, pay]));
 	});
 });
