@@ -9,8 +9,8 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
-    <script src=“https://www.gstatic.com/firebasejs/5.10.0/firebase.js“></script>
-    <script src=“https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js“></script>
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
     <title>Timesheet</title>
 </head>
 
@@ -43,14 +43,7 @@
                                 </tr>
                             </thead>
                             <tbody class="display">
-                                <tr>
-                                    <td>Mark</td>
-                                    <td>CEO</td>
-                                    <td>4/23/2018</td>
-                                    <td>12</td>
-                                    <td>$1</td>
-                                    <td>$12</td>
-                                </tr>
+                                
                             </tbody>
                         </table>
                     </div>
@@ -78,7 +71,7 @@
                             <label>Monthly Rate</label>
                             <input class="form-control" id="Rate" placeholder="20000">
                         </div>
-                        <button type="submit" class="btn float-right btn-primary">Submit</button>
+                        <button type="submit" class="btn float-right btn-primary" id="submit">Submit</button>
                     </form>
                 </div>
             </div>

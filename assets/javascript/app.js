@@ -21,7 +21,7 @@ $(document).ready(function() {
 	// pull the object down
 	// display it on the html table with <tr><td></td><tr>
 
-	$("#submit").on("click", function() {
+	$("#submit").on("click", function(event) {
 
 	    event.preventDefault();
 
@@ -42,13 +42,14 @@ $(document).ready(function() {
 	})	
 
 	database.ref().on("child_added", function(data) {
-		var name = $("<td>").text(item.name.trim());
-		var title = $("<td>").text(item.title.trim());
-		date = moment(item.startDate, "MM-DD-YYYY");
-		var startDate = $("<td>").text(date.format("MM-DD-YYYY"));
-		var rate = $("<td>").text("$" + item.rate);
-		var month = $("<td>").text(moment.diff(date, "months"));
-		var pay = $("<td>").text("$" + month*rate);
+		var name = $("<td>").text(data.val().name.trim());
+		var title = $("<td>").text(data.val().title.trim());
+		date = data.val().startDate;
+		var startDate = $("<td>").text(date);
+		var rate = $("<td>").text("$" + data.val().rate);
+		var month = $("<td>").text(moment().diff(date, "months"));
+		var months = moment().diff(date, "months");
+		var pay = $("<td>").text("$" + (months*data.val().rate));
 		$(".display").append($("<tr>").append([name, title, startDate, month, rate, pay]));
 	});
 });
