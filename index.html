@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Timesheet</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="jumbotron jumbotron-fluid bg-dark text-center">
+
+                    <h1 class="display-4 text-white">Employee Data Management</h1>
+                    <p class="lead text-white">A Comprehensive Directory of Employee Billable Hours</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid border">
+            <div class=" row">
+                Current Employees
+            </div>
+            <div class="row">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Employee Name</th>
+                            <th scope="col">Role</th>
+                            <th scope="col">Start Date</th>
+                            <th scope="col">Months Worked</th>
+                            <th scope="col">Monthly Rate ($)</th>
+                            <th scope="col">Total Billed</th>
+                        </tr>
+                    </thead>
+                    <tbody class="display">
+                        <tr>
+                            <th>Mark</th>
+                            <td>CEO</td>
+                            <td>Otto</td>
+                            <td>4/23/2018</td>
+                            <td>$1</td>
+                            <td>$12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="container-fluid border">
+            <div class="row">
+                <form>
+                    <div class="form-group col-sm-12">
+                        <label>Employee Name</label>
+                        <input class="form-control" id="Name" placeholder="Jane Doe">
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <label>Role</label>
+                        <input class="form-control" id="Role" placeholder="CEO">
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <label>Start Date (MM/DD/YYYY)</label>
+                        <input class="form-control " id="Start" placeholder="01/08/1989">
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <label>Monthly Rate</label>
+                        <input class="form-control" id="Rate" placeholder="Monthly Rate">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/app.js"></script>
+
+</html>
