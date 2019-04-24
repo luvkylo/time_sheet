@@ -11,20 +11,20 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <div class="jumbotron jumbotron-fluid bg-dark text-center">
+                <div class="jumbotron text-center" style="background: black;">
 
-                    <h1 class="display-4 text-white">Employee Data Management</h1>
-                    <p class="lead text-white">A Comprehensive Directory of Employee Billable Hours</p>
+                    <h1 class="display-5 text-white">Employee Data Management</h1>
+                    <h3 class="display-5 text-white">A Comprehensive Directory of Employee Billable Hours</h3>
 
                 </div>
             </div>
         </div>
-        <div class="container-fluid border">
+        <div class="container border">
             <div class=" row">
-                Current Employees
+                <p>Current Employees</p>
             </div>
             <div class="row">
                 <table class="table">
@@ -42,8 +42,8 @@
                         <tr>
                             <th>Mark</th>
                             <td>CEO</td>
-                            <td>Otto</td>
                             <td>4/23/2018</td>
+                            <td>12</td>
                             <td>$1</td>
                             <td>$12</td>
                         </tr>
@@ -51,7 +51,7 @@
                 </table>
             </div>
         </div>
-        <div class="container-fluid border">
+        <div class="container border">
             <div class="row">
                 <form>
                     <div class="form-group col-sm-12">
@@ -64,11 +64,11 @@
                     </div>
                     <div class="form-group col-sm-12">
                         <label>Start Date (MM/DD/YYYY)</label>
-                        <input class="form-control " id="Start" placeholder="01/08/1989">
+                        <input class="form-control" type="date" id="Start" placeholder="01/08/1989">
                     </div>
                     <div class="form-group col-sm-12">
                         <label>Monthly Rate</label>
-                        <input class="form-control" id="Rate" placeholder="Monthly Rate">
+                        <input class="form-control" id="Rate" placeholder="20000">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
