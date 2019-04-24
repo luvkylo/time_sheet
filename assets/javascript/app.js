@@ -13,4 +13,11 @@ $(document).ready(function() {
 	firebase.initializeApp(config);
 
 	var database = firebase.database();
+
+	// when form submit clicked, take in value from form
+	// push it to the firebase
+
+	// firebase on("child_added") change
+	// pull the object down
+	// display it on the html table with <tr><td></td><tr>
 });
