@@ -20,6 +20,27 @@ $(document).ready(function() {
 	// firebase on("child_added") change
 	// pull the object down
 	// display it on the html table with <tr><td></td><tr>
+
+	$("#submit").on("click", function() {
+
+    event.preventDefault();
+
+    name = $("#Name").val().trim();
+    title = $("#Role").val().trim();
+    startDate = $("#Start").val().trim();
+    rate = $("#Rate").val().trim();
+
+    console.log(name, title, startDate, rate);
+
+    database.ref().push({
+        name: name,
+        title: title,
+        startDate: startDate,
+				rate: rate
+		});
+		
+	})	
+
 	database.ref().on("child_added", function(data) {
 		var name = $("<td>").text(item.name.trim());
 		var title = $("<td>").text(item.title.trim());
