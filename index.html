@@ -26,56 +26,61 @@
                 </div>
             </div>
         </div>
-        <div class="container border">
-            <div class=" row">
-                <p>Current Employees</p>
-            </div>
-            <div class="row">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Employee Name</th>
-                            <th scope="col">Role</th>
-                            <th scope="col">Start Date</th>
-                            <th scope="col">Months Worked</th>
-                            <th scope="col">Monthly Rate ($)</th>
-                            <th scope="col">Total Billed</th>
-                        </tr>
-                    </thead>
-                    <tbody class="display">
-                        <tr>
-                            <th>Mark</th>
-                            <td>CEO</td>
-                            <td>4/23/2018</td>
-                            <td>12</td>
-                            <td>$1</td>
-                            <td>$12</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card mb-4">
+                    <div class="card-header">Current Employees</div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Employee Name</th>
+                                    <th scope="col">Role</th>
+                                    <th scope="col">Start Date</th>
+                                    <th scope="col">Months Worked</th>
+                                    <th scope="col">Monthly Rate ($)</th>
+                                    <th scope="col">Total Billed</th>
+                                </tr>
+                            </thead>
+                            <tbody class="display">
+                                <tr>
+                                    <td>Mark</td>
+                                    <td>CEO</td>
+                                    <td>4/23/2018</td>
+                                    <td>12</td>
+                                    <td>$1</td>
+                                    <td>$12</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="container border">
-            <div class="row">
-                <form>
-                    <div class="form-group col-sm-12">
-                        <label>Employee Name</label>
-                        <input class="form-control" id="Name" placeholder="Jane Doe">
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <label>Role</label>
-                        <input class="form-control" id="Role" placeholder="CEO">
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <label>Start Date (MM/DD/YYYY)</label>
-                        <input class="form-control" type="date" id="Start" placeholder="01/08/1989">
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <label>Monthly Rate</label>
-                        <input class="form-control" id="Rate" placeholder="20000">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card mb-4">
+                    <div class="card-header">Add Employee</div>
+                    <form>
+                        <div class="form-group col-sm-12">
+                            <label>Employee Name</label>
+                            <input class="form-control" id="Name" placeholder="Jane Doe">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label>Role</label>
+                            <input class="form-control" id="Role" placeholder="CEO">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label>Start Date (MM/DD/YYYY)</label>
+                            <input class="form-control" type="date" id="Start" placeholder="01/08/1989">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label>Monthly Rate</label>
+                            <input class="form-control" id="Rate" placeholder="20000">
+                        </div>
+                        <button type="submit" class="btn float-right btn-primary">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
